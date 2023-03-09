@@ -4,6 +4,8 @@ Description=DiskScan
 [Service]
 ExecStart=/bin/bash /root/diskscan.sh
 ExecStartPost=/bin/sh -c 'umask 022; echo $MAINPID > /var/run/diskscan.pid'
+ExecStop=/usr/bin/pkill -F /var/run/diskscan.pid
+TimeoutSec=5sec
 PIDFile=/var/run/diskscan.pid
 Restart=always
 # Restart service after 10 seconds if python process crashes
