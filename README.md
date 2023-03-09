@@ -22,10 +22,10 @@ Under Windows:
 <br>python diskscan.py "/dev/ploop12345"
 
 
-A Python 2 or 3 installation is required. There are optional package dependencies:
+A Python 2 or 3 installation is required. There are package dependencies:
 <br> - psutil
 <br> - pywin32 (under Windows OS only)
-<br> - wmi (under Windows OS only)
+<br> - wmi (under Windows OS only, needed if pywin32 is not installed)
 
 
 ### Licence
