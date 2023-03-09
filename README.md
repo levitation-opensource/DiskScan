@@ -16,7 +16,7 @@ Note: Relying solely on this tool to detect and address disk issues may not be s
 ### Usage
 
 Under Windows:
-<br>python diskscan.py "\\.\PhysicalDrive0"
+<br>python diskscan.py "\\\\.\\PhysicalDrive0"
 <br>or
 <br>Under Linux:
 <br>python diskscan.py "/dev/ploop12345"
