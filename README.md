@@ -1,4 +1,4 @@
-### Background disk surface scan tool
+### Disk surface background scan tool
 
 Some RAID controllers to not provide full SMART functionality. Therefore they may report about SMART errors, but not be able to enable automatic background disk surface scans by SMART itself. In these cases it might be helpful to run these disk surface scans by using a manual tool.
 

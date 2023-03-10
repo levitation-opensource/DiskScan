@@ -33,6 +33,8 @@ else:   #/ if len(sys.argv) >= 2:
   print('')
   print('Description:')
   print('')
+  print('Disk surface background scan tool')
+  print('')
   print('Some RAID controllers to not provide full SMART functionality. Therefore they may report about SMART errors, but not be able to enable automatic background disk surface scans by SMART itself. In these cases it might be helpful to run these disk surface scans by using a manual tool.')
   print('')
   print('The current tool slowly reads the whole surface of a given physical disk and then repeats indefinitely. The theory behind the motivation is that when the disk encounters a weak sector during the read operation, its firmware will hopefully relocate the data in this sector into a good spare sector. This will definitely happen when the weak sector is written to, but maybe reading the weak sector first helps the disk firmware to become aware sooner that the data in the weak sector needs to be relocated.')
